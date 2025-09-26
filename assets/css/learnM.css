@@ -1,0 +1,91 @@
+:root {
+    --primary: #000000;
+    --primary-dark: #a98600;
+    --secondary: #9e9400;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --transition: all 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    padding: 6rem 0;
+    margin: 0 auto;
+}
+
+.back{
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding: 5px 25px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px var(--dark);
+    transition: .2s ease;
+    cursor: pointer;
+    
+}
+
+.back:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.back a{
+    color: var(--light);
+    font-weight: 900;
+}
+
+.traditionalMethod h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  font-weight: 500;
+  text-align: justify;
+  align-items: left;
+}
+
+.sysArchi p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+.train p{
+    text-align: justify;
+}
+
+/* Card container spacing */
+.card-wrapper {
+  gap: 2rem; /* extra spacing between cards */
+}
+
+/* Custom card styling */
+.custom-card {
+  width: auto;         /* equal card width */
+  border: none;         /* cleaner look */
+  overflow: hidden;     /* hides overflow if images crop */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ensure all images look uniform */
+
+
+.card-title{
+    justify-content: center;
+    font-weight: 700;
+    
+}
+
+.prototype-img {
+    
+  max-height: 30vh;      /* responsive: 30% of viewport height */
+  display: block;        /* removes inline spacing */
+  object-fit: contain;   /* prevents stretching/cropping */
+}
+
+
