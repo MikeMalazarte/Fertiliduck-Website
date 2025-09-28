@@ -22,6 +22,11 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
+        html, body {
+        max-width: 100%;
+        overflow-x: hidden; /* prevent sideways scrolling */
+        }
         
         /* Modern Navbar Styles */
         .navbar-modern {
