@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertiliduck</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/egg-sharp-solid-full.svg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/learnM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-modern fixed-top">
+        <div class="container">
+            <a class="navbar-brand-modern" href="#">
+                <i class="fa-solid fa-egg"></i>Fertili<span>Duck</span>
+            </a>
+            
+            <button class="navbar-toggler navbar-toggler-modern" type="button" data-bs-toggle="collapse" data-bs-target="#navbarModern">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarModern">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="/fertiliduck_doc/Fertiliduck-Website/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="#sys">System Architecture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="#model">Model Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-modern" href="#test">Test & Result</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <a href="https://drive.google.com/file/d/14Xu1LNE5dYT2eKqRwqZc10fmJJM8LZmc/view?usp=sharing" class="btn btn-modern"><i class="fa-solid fa-file-arrow-down"></i> Download Full Study</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<main id="home" class="main-content">
+
+
+    <section id="sys" class="sysArchi container my-5 px-4">
+        <div class="row text-center mt-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold">System Architecture</h2>
+                <p class="lead">Our components are designed to work seamlessly together</p>
+            </div>
+        </div>
+
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-md-6 text-center">
+                    <img src="/fertiliduck_doc/Fertiliduck-Website/assets/img/sysarch.png" 
+                        alt="System Architecture Img" 
+                        class="img-fluid rounded-3 shadow-lg w-100">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <p class="lead mt-1 text-justify">
+                        The architecture of the system in the third design shows how the mechanical and 
+                        electronic parts are going to be integrated in automating the fertility detection of the duck eggs. 
+                        It is run by a duck egg farmer, where eggs are placed inside a 3D-printed tray that sits in a wooden box 
+                        and followed by a drawer slider mechanism to facilitate lifts and replenishment. The internal system 
+                        is composed of Raspberry Pi 5 central processing unit, which is connected with a webcam, which 
+                        allows capturing the images, a touchscreen LCD that will help display the results, and a relay 
+                        module which will determine when to turn-on the LED lamps used to guide the eggs. It is an 
+                        externally powered system which has fans to regulate thermal control as well. Such architecture 
+                        allows optimal and valid fertility assessment, allowing working in real-time with no user input.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    
+        <div id="model" class="row text-center mt-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold">Model Training Result</h2>
+            </div>
+        </div>
+
+        <section class="train container my-5">
+            <div class="row justify-content-center g-4">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow rounded-3">
+                        <img src="assets/img/train.png" class="card-img-top" alt="Image 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">UI Result</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow rounded-3">
+                        <img src="assets/img/graph.png" class="card-img-top" alt="Image 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Epoch Training</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="resP mt-4">
+            <p class="lead">
+                The UI result demonstrates that the trained YOLO model is capable of detecting and classifying duck eggs into balut and penoy with 
+                confidence values consistently above 0.85, indicating strong prediction reliability. The bounding boxes are well-aligned with each egg, 
+                suggesting that the detection process is precise and effective in real-time conditions. On the other hand, the training metrics graph shows 
+                the convergence of the model across epochs 3 to 11. The box loss, class loss, and DFL loss values decline steadily, reflecting the model’s 
+                ability to minimize prediction errors. At the same time, the mAP50 and mAP50-95 scores show a gradual upward trend and eventually stabilize, 
+                which indicates that the model has achieved consistent accuracy in distinguishing between balut and penoy. Overall, these results confirm that 
+                the system is well-trained, stable, and capable of delivering reliable fertility assessment of duck eggs.
+            </p>
+        </div>
+    </section>
+
+
+        <section id="test" class="test container">
+            <div class="row text-center mb-5 mt-5">
+                <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold">Test and Result</h2>
+                <p class="lead">List of Related Results Upon Testing</p>
+                </div>
+            </div>
+            <div class="testCard mb-5">
+                <div class="row align-items-start">
+                    <h2 class="text-center mb-4">Efficiency</h2>
+                    <div class="efficient d-flex flex-column flex-md-row gap-4 align-items-center">
+                        <img src="assets/img/efficient.png" alt="Efficient Image" class="img-fluid rounded-3"/>
+
+                        <p>FertiliDuck significantly outperformed the traditional candling method. In 5-minute tests, it detected up to 150 eggs per batch, while manual inspection averaged only 42 eggs. This proves FertiliDuck is over 3x faster, helping farmers save time and boost productivity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testCard mb-5">
+                <div class="row align-items-start">
+                    <h2 class="text-center mb-4">Speed</h2>
+                    <div class="efficient d-flex flex-column flex-md-row gap-4 align-items-center">
+                        <img src="assets/img/speed.png" alt="Efficient Image" class="img-fluid rounded-3"/>
+
+                        <p>FertiliDuck analyzed 25 duck eggs in just 1 second per batch, while the traditional method took 3–5 seconds per egg. This shows that FertiliDuck is drastically faster, making it ideal for high-efficiency operations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testCard mb-5">
+                <div class="row align-items-start">
+                    <h2 class="text-center mb-4">Accuracy</h2>
+                    <div class="efficient d-flex flex-column flex-md-row gap-4 align-items-center">
+                        <img src="assets/img/accuracy.png" alt="Efficient Image" class="img-fluid rounded-3"/>
+
+                        <p>While the traditional candling method demonstrated consistent 100% accuracy across all tests, the Fertiliduck device exhibited high accuracy, ranging from 92% to 100%, indicating strong performance with minor variation.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+</main>
+
+
+
+
+    
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-brand"><i class="fa-solid fa-egg"></i>Fertili<span>Duck</span></a>
+                    <p class="footer-about">We created compact, modern and automated candling device that help duck egg farmers produce better and faster duck egg fertility results.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 offset-lg-1">
+                    <h5 class="footer-heading">Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="/fertiliduck_doc/Fertiliduck-Website/index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#sys"><i class="fas fa-chevron-right"></i> System Architecture</a></li>
+                        <li><a href="#model"><i class="fas fa-chevron-right"></i> Model Training</a></li>
+                        <li><a href="#test"><i class="fas fa-chevron-right"></i> Test & Result</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom py-3 text-light">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                <p class="mb-0 text-center">&copy; 2025 Fertiliduck. All rights reserved.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/javascript/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

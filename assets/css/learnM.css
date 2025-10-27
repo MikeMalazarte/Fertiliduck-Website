@@ -1,0 +1,83 @@
+:root {
+    --primary: #000000;
+    --primary-dark: #a98600;
+    --secondary: #fceb00;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --transition: all 0.3s ease;
+}
+
+.main-content {
+    flex: 1;
+    padding: 6rem 0;
+    margin: 0 auto;
+}
+
+.back{
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding: 5px 25px;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px var(--dark);
+    transition: .2s ease;
+    cursor: pointer;
+    
+}
+
+
+.back:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.back a{
+    color: var(--light);
+    font-weight: 900;
+}
+
+.traditionalMethod h2 {
+  font-size: 2rem;
+  color: var(--dark);
+  font-weight: 500;
+  text-align: justify;
+  align-items: left;
+}
+
+.sysArchi p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+.train p{
+    text-align: justify;
+}
+
+        /* Test and Result */
+        .testCard{
+            background: linear-gradient(135deg, #6f7072 0%, #a0a24b 100%);
+            padding: 30px;
+            border-radius: 20px;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .testCard:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testCard h2{
+            font-weight: 700;
+            font-size: 2.5rem;
+
+        }
+        .efficient p{
+            text-align: justify;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+
